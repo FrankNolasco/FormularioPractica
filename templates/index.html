@@ -30,6 +30,7 @@
         <label for="name_and_lastname">NOMBRE Y APELLIDOS</label>
         <input
           required
+          placeholder="Escribe un texto aquí..."
           id="name_and_lastname"
           name="name_and_lastname"
           type="text"
@@ -45,7 +46,7 @@
           type="date"
         />
         <label for="phone">NUMERO DE CELULAR</label>
-        <input id="phone" name="phone" type="tel" />
+        <input id="phone" placeholder="Escribe un telefono aquí..." name="phone" type="tel" />
         <label for="hair_color">COLOR DE CABELLO</label>
         <input required id="hair_color" name="hair_color" type="color" />
 
@@ -80,23 +81,23 @@
           </div>
         </div>
         <label for="facebook">FACEBOOK</label>
-        <input id="facebook" name="facebook" type="url" />
+        <input id="facebook" placeholder="Escribe una url aquí..." name="facebook" type="url" />
         <label for="recorder-hour">HORA DE INICIO DE CLASE</label>
         <input id="recorder-hour" name="recorder-hour" type="time" />
       </div>
       <div class="field-data">
         <h3>CONFIGURACION DE INICIO DE SESION</h3>
         <label for="email">CORREO ELECTRONICO</label>
-        <input id="email" required name="email" type="email" />
+        <input id="email" required name="email" type="email" placeholder="Escribe tu correo electronico" />
         <label for="password">CONTRASEÑA</label>
-        <input id="password" required name="password" type="password" />
+        <input id="password" required name="password" type="password" placeholder="Escribe una contraseña de seguridad"/>
       </div>
       <div class="field-data">
         <h3>PREGUNTAS DE SEGURIDAD</h3>
         <label for="month_favorite">MES FAVORITO</label>
         <input id="month_favorite" name="month_favorite" type="month" required/>
         <label for="number_favorite">NUMERO FAVORITO</label>
-        <input id="number_favorite" name="number_favorite" type="number" required/>
+        <input id="number_favorite" name="number_favorite" type="number" required placeholder="Dime tu numero favorito..."/>
       </div>
       <div class="buttons">
         <input class="btn btn-reset" type="reset" />
