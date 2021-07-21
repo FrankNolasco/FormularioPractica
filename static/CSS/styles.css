@@ -1,0 +1,98 @@
+.form-test {
+    width: 60%;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: .4rem;
+    overflow: hidden;
+    border: solid 4px var(--primary-ligth);
+    padding: 1.5rem;
+}
+
+.title-form {
+    border-bottom: 2px var(--primary-ligth) dashed;
+}
+.title-form h2 {
+    padding: 0;
+    margin: 0;
+    color: var(--primary);
+    text-align: center;
+    font-weight: 900;
+}
+
+.field-data {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.field-data h3 {
+    grid-column: 1 / 4;
+    text-align: center;
+}
+.field-data > label {
+    font-weight: bold;
+    align-self: center;
+}
+.field-data > input{ 
+    grid-column: 2 / 4;
+}
+#hair_color, #birthday, #phone {
+    grid-column: 2 / 3;
+}
+
+#label_photo_name {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+#photo_name {
+    grid-column: 3 / 4;
+    grid-row: 4 / 7;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.btn {
+    width: 50%;
+    padding: 10px ;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.btn-reset { 
+    color: var(--primary);
+}
+.btn-submit {
+    background-color: var(--primary);
+    color: white;
+}
+
+input {
+    padding: 5px;
+    border: solid 1px var(--primary-ligth);
+    transition: all .2s;
+}
+input:focus{
+    outline: solid 1px var(--primary);
+    overflow: hidden;
+    border-radius: 0;
+}
+
+input[type="radio"]:focus{
+    outline: 0;
+    border-radius: 0;
+}
+
+input[required]{
+    border-bottom: solid 2px var(--primary);
+}
+
+input[type="color"]{
+    padding: 0;
+    border: solid 1px #c3c3c3;
+}

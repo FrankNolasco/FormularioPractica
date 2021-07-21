@@ -1,82 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/CSS/normalize.css" />
+    <link rel="stylesheet" href="../static/CSS/theme.css" />
+    <link rel="stylesheet" href="../static/CSS/styles.css" />
     <title>PRACTICAS DE FORMULARIOS</title>
-</head>
-<body>
-    <form method="post" action="/submit">
-        <div>
-            <label for="name_and_lastname">NOMBRE Y APELLIDOS</label>
-            <input name="name_and_lastname" type="text"/>
+  </head>
+  <body>
+    <div class="absolute-wallpaper"></div>
+    <form method="post" class="form-test" action="/submit">
+      <div class="title-form">
+        <h2>FORMULARIO DE REGISTRO</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, animi
+          et ad tempore repellendus deserunt minus adipisci provident excepturi
+          dolores nihil beatae eligendi, sunt similique id ducimus dicta itaque
+          ab.
+        </p>
+      </div>
+
+      <div class="field-data">
+        <h3>DATOS PERSONALES</h3>
+        <label for="name_and_lastname">NOMBRE Y APELLIDOS</label>
+        <input
+          required
+          id="name_and_lastname"
+          name="name_and_lastname"
+          type="text"
+        />
+        <label id="label_photo_name" for="photo_name">FOTO DE PERFIL</label>
+        <input required id="photo_name" name="photo_name" type="file" />
+        <label for="birthday">FECHA DE NACIMIENTO</label>
+        <input
+          class="input-full-width"
+          required
+          id="birthday"
+          name="birthday"
+          type="date"
+        />
+        <label for="phone">NUMERO DE CELULAR</label>
+        <input id="phone" name="phone" type="tel" />
+        <label for="hair_color">COLOR DE CABELLO</label>
+        <input required id="hair_color" name="hair_color" type="color" />
+
+        <label>SEXO </label>
+        <div class="sex-orientation">
+          <div>
+            <input
+              name="sexual_orientacion"
+              id="man"
+              value="man"
+              type="radio"
+            />
+            <label for="man">HOMBRE</label>
+          </div>
+          <div>
+            <input
+              name="sexual_orientacion"
+              id="woman"
+              value="woman"
+              type="radio"
+            />
+            <label for="woman">MUJER</label>
+          </div>
+          <div>
+            <input
+              name="sexual_orientacion"
+              id="not_preferences"
+              value="not_preferences"
+              type="radio"
+            />
+            <label for="not_preferences">PREFIERO NO DECIRLO</label>
+          </div>
         </div>
-        <div>
-            <label for="birthday"></label>
-            <input name="birthday" type="date"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input name="" type="color"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="email"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="file"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="image"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="month"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="number"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="password"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="radio"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="range"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="reset"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="search"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="tel"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="time"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="url"/>
-        </div>
-        <div>
-            <label for=""></label>
-            <input type="week"/>
-        </div>
+        <label for="facebook">FACEBOOK</label>
+        <input id="facebook" name="facebook" type="url" />
+        <label for="recorder-hour">HORA DE INICIO DE CLASE</label>
+        <input id="recorder-hour" name="recorder-hour" type="time" />
+      </div>
+      <div class="field-data">
+        <h3>CONFIGURACION DE INICIO DE SESION</h3>
+        <label for="email">CORREO ELECTRONICO</label>
+        <input id="email" required name="email" type="email" />
+        <label for="password">CONTRASEÑA</label>
+        <input id="password" required name="password" type="password" />
+      </div>
+      <div class="field-data">
+        <h3>PREGUNTAS DE SEGURIDAD</h3>
+        <label for="month_favorite">MES FAVORITO</label>
+        <input id="month_favorite" name="month_favorite" type="month" required/>
+        <label for="number_favorite">NUMERO FAVORITO</label>
+        <input id="number_favorite" name="number_favorite" type="number" required/>
+      </div>
+      <div class="buttons">
+        <input class="btn btn-reset" type="reset" />
+        <input class="btn btn-submit" type="submit" />
+      </div>
     </form>
-</body>
+  </body>
 </html>
